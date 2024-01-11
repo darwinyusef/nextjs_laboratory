@@ -5,17 +5,16 @@ Aqui en este espacio vamos a incluir en video algunas pruebas y vamos a incluirl
 ## Tecnologías 
 
 ### Analiticas ( Tiempo: 3h 45m - Teorica 2h )
-Arquitecturas -> Protipados -> Requerimientos -> Diseño -> Analisis -> Tecnologías -> 
+Arquitecturas -> Protipados -> Requerimientos -> Diseño -> Analisis -> Tecnologías | Pendientes:  Patrones de Diseño
 
-### Diseño ( Tiempo: 6h - Teórica 2h )
-Herramientas vectoriales -> Atomic Design -> Figma -> Design Systems 
+### Diseño ( Tiempo: 8h - Teórica 2h - Design Tocken 4h )
+Herramienta vectoriales -> Taller de Figma uso completo de la herramienta -> introducción a Storybook -> Atomic Design -> Design Systems -> Design Tockens 
 
-### Frontend ( Tiempo: 8h + 12h + 8h + 5h + 6h - Teórica: 10h )
--> Next js -> React ->  CSS -> tailwind | HTML -> TypeScript -> Zustand js ->
-React Query 
+### Frontend ( Tiempo: 8h + 12h + 8h + 5h + 6h - 4h - 3h Teórica: 12h )
+tailwind -> HTML5 -> Next js -> React ->  CSS3 -> TypeScript -> Zustand js -> React Query -> Framer motion -> Next UI -> Scroll Animations -> Animations -> Formik
 
 ### Backend ( Tiempo: 4h + 4h + 3h + 1h - Teórica: 5h )
--> Python FastAPI -> Autenticación JWT AUTH  -> SQL MYSQL -> Mocks
+Pendientes:  Patrones de Diseño -> Diseño del backend -> Python FastAPI -> Autenticación JWT AUTH  -> SQL - MYSQL -> json Mocks
 
 ### Repository ( Tiempo: 1h - Teórica: 15m )
 -> GIT- GITHUB
