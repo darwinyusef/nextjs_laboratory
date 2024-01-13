@@ -2,6 +2,20 @@
 # Vamos a realizar en video algunas pruebas y vamos a incluirlas usando AI y Sheet Cheet
 Aqui en este espacio vamos a incluir en video algunas pruebas y vamos a incluirlas usando AI y Sheet Cheet la parte academica se va a divir en 6 partes cada una de ellas con su respectivo aspecto teorico para formarnos como fullstack 
 
+
+```mermaid
+pie title AQUICREAMOS BOOTCAMP 
+        "ARQUITECTURA" : 15
+        "PLANEACIÓN" : 15
+        "ANÁLISIS" : 20
+        "DISEÑO" : 30
+        "FRONTEND" : 35
+        "ANIMACIONES" : 5
+        "BACKEND" : 15
+        "DOCUMENTACION" : 5
+        "DESPLIEGUE" : 10
+```
+
 ## Tecnologías 
 
 ### Analiticas ( Tiempo: 3h 45m - Teorica 2h )
