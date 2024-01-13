@@ -1,5 +1,7 @@
 
-# Vamos a realizar en video algunas pruebas y vamos a incluirlas usando AI y Sheet Cheet
+# Bienvenidos al Bootcamp 2024 de TI con JS, Diseño y Arquitectura
+
+## Vamos a realizar en video algunas pruebas y vamos a incluirlas usando AI y Sheet Cheet
 Aqui en este espacio vamos a incluir en video algunas pruebas y vamos a incluirlas usando AI y Sheet Cheet la parte academica se va a divir en 6 partes cada una de ellas con su respectivo aspecto teorico para formarnos como fullstack 
 
 
