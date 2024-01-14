@@ -1,8 +1,7 @@
 
 # Bienvenidos al Bootcamp 2024 de TI con JS, Diseño y Arquitectura
 
-## Vamos a realizar en video algunas pruebas y vamos a incluirlas usando AI y Sheet Cheet
-Aqui en este espacio vamos a incluir en video algunas pruebas y vamos a incluirlas usando AI y Sheet Cheet la parte academica se va a divir en 6 partes cada una de ellas con su respectivo aspecto teorico para formarnos como fullstack 
+## Vamos a estar trabajando con un bootcamp donde incluiremos practicas de laboratorio en cada Tecnica y las contextualizaremos usando AI y Sheet Cheet la parte academica se va a divir en 6 partes cada una de ellas con su respectivo aspecto teorico para formarnos como fullstack 
 
 
 ```mermaid
@@ -28,7 +27,7 @@ Herramienta vectoriales -> Taller de Figma uso completo de la herramienta -> int
 
 ### Frontend ( Tiempo: 8h + 12h + 8h + 5h + 6h - 4h - 3h Teórica: 12h )
 
-HTML5
+Aprende de 0 HTML5 
 1. Structure y Doctypes
 2. Paragraph y Text formatting
 3. Links
@@ -48,7 +47,8 @@ HTML5
 17. Media elements - Video & Audio 
 
 
-Tailwind y CSS 
+Aprende de 0 Tailwind y CSS3
+
 ```mermaid
 timeline
     title TAILWIND Y CSS3 de 0
