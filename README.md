@@ -22,12 +22,17 @@ pie title AQUICREAMOS BOOTCAMP
 ### Analiticas ( Tiempo: 3h 45m - Teorica 2h )
 Arquitecturas -> Protipados -> Requerimientos -> Diseño -> Analisis -> Tecnologías | Pendientes:  Patrones de Diseño
 
+---
+
 ### Diseño ( Tiempo: 8h - Teórica 2h - Design Tocken 4h )
 Herramienta vectoriales -> Taller de Figma uso completo de la herramienta -> introducción a Storybook -> Atomic Design -> Design Systems -> Design Tockens 
+
+---
 
 ### Frontend ( Tiempo: 8h + 12h + 8h + 5h + 6h - 4h - 3h Teórica: 12h )
 
 Aprende de 0 HTML5 
+
 1. Structure y Doctypes
 2. Paragraph y Text formatting
 3. Links
@@ -43,9 +48,17 @@ Aprende de 0 HTML5
 14. Iframes
 15. Layout HTML5
 15. Semantic Layout HTML5
-16. Intro to Inputs
+Intro to Inputs
+	> input -> captura datos tipo texto o numero
+	> select -> datos prehechos a seleccionar 
+	> input -> radio - circulo unico
+        > input -> checkbox -> cuadrado multiple
+	> textarea -> parrafo
+	> form -> get | post | put | delete
+	> input -> submit 
 17. Media elements - Video & Audio 
 
+---
 
 Aprende de 0 Tailwind y CSS3
 
@@ -61,7 +74,9 @@ timeline
     Customizing Tailwind: Configuration File Basics : Change Default Values : Change Generated Classes : Configure Variant Prefixes : Integrate with Existing CSS : Access Tailwind from JavaScript : Purge CSS
 ``` 
 
- Next js -> React ->  CSS3 -> TypeScript -> Zustand js -> React Query -> Framer motion -> Next UI -> Scroll Animations -> Animations -> Formik
+---
+
+Next js -> React ->  CSS3 -> TypeScript -> Zustand js -> React Query -> Framer motion -> Next UI -> Scroll Animations -> Animations -> Formik
 
 ### Backend ( Tiempo: 4h + 4h + 3h + 1h - Teórica: 5h )
 Pendientes:  Patrones de Diseño -> Diseño del backend -> Python FastAPI -> Autenticación JWT AUTH  -> SQL - MYSQL -> json Mocks
