@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Semántico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: orangered;
+            color: #fff;
+            padding: 0.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav:hover {
+            background-color: black;
+        }
+
+        nav ul li:hover {
+            border-bottom: 2px solid white;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.5em 1em;
+            display: block;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        article {
+            border: 1px solid #ddd;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sitio web básico</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Sección 1</h2>
+            <p>Contenido de la sección 1.</p>
+        </section>
+
+        <section>
+            <h2>Sección 2</h2>
+            <article>
+                <h3>Artículo 1</h3>
+                <p>Contenido del artículo 1.</p>
+            </article>
+            <article>
+                <h3>Artículo 2</h3>
+                <p>Contenido del artículo 2.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

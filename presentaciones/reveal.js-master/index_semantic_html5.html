@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Semántico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: orangered;
+            color: #fff;
+            padding: 0.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav:hover {
+            background-color: black;
+        }
+
+        nav ul li:hover {
+            border-bottom: 2px solid white;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.5em 1em;
+            display: block;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        article {
+            border: 1px solid #ddd;
+            padding: 1em;
+        }
+
+        aside {
+            background-color: #f4f4f4;
+            padding: 1em;
+        }
+
+        details {
+            margin-bottom: 20px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 1em;
+            overflow: auto;
+        }
+
+        dialog {
+            padding: 1em;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Semantic Web Design</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <dialog open>
+        <p>Contenido del diálogo.</p>
+        <button onclick="dialog.close()">Cerrar</button>
+    </dialog>
+    <main>
+
+        <section>
+            <h2>Sección 1</h2>
+            <p>Contenido de la sección 1.</p>
+        </section>
+
+        <section>
+            <h2>Sección 2</h2>
+            <article>
+                <h3>Artículo 1</h3>
+                <p>Contenido del artículo 1.</p>
+            </article>
+            <article>
+                <h3>Artículo 2</h3>
+                <p>Contenido del artículo 2.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Barra lateral</h2>
+            <p>Contenido del aside.</p>
+        </aside>
+
+        <details name="lista">
+            <summary>Detalles1</summary>
+            <p>Contenido detallado No 1</p>
+        </details>
+        <details name="lista">
+            <summary>Detalles2</summary>
+            <p>Contenido detallado  No  2</p>
+        </details>
+        <details name="lista">
+            <summary>Detalles3</summary>
+            <p>Contenido detallado  No 3</p>
+        </details>
+
+        <figure>
+            <img src="https://static.wixstatic.com/media/cf3807_8e18f78cc876409c9b7502be3dc9d9b1~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf3807_8e18f78cc876409c9b7502be3dc9d9b1~mv2.jpg" alt="Descripción de la imagen">
+            <figcaption>Descripción de la imagen</figcaption>
+        </figure>
+
+        <pre>
+            <code>
+                // Código de ejemplo
+                function ejemplo() {
+                    console.log("Hola, mundo!");
+                }
+            </code>
+        </pre>
+
+       
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

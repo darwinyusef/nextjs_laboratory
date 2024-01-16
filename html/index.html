@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yusef</title>
+    <style>
+      body {
+        background-color: #3d3939;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #3366cc;
+      }
+
+      .box {
+        border: 1px solid #999;
+        padding: 5px;
+      }
+
+      .box h1 {
+        margin: 0px;
+      }
+
+      article[data-columns="3"] h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(230, 230, 230)">
+    <!-- Textos -->
+    <p>Este es un párrafo de ejemplo.</p>
+    <strong>Texto en negrita</strong>
+    <em>Texto en cursiva</em>
+    <h1>Texto en h1</h1>
+    <h2>Texto en h2</h2>
+    <h3>Texto en h3</h3>
+    <h4>Texto en h4</h4>
+    <hr />
+
+    <!--Listas-->
+    <ul>
+      <a href="./pepito.html"><li>Pepito</li></a>
+      <li><a href="./pepito.html">Pepito 2</a></li>
+    </ul>
+
+    <ol>
+      <li>Elemento numerado 1</li>
+      <li>Elemento numerado 2</li>
+    </ol>
+
+    <hr />
+
+    <!--Enlaces-->
+    <a href="https://html-css-js.com/html/tags/" target="_blank">Sheat Sheet</a>
+
+    <hr />
+
+    <img src="https://placehold.co/600x400" alt="Esta imagen ponla aqui" />
+    <img src="#" alt="Esta imagen ponla aqui" />
+    <hr />
+
+    <!-- Formulario -->
+    <table>
+      <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+      </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+    </table>
+
+    <hr />
+    <br /><br />
+    <form action="/capturador" method="get">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
+
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <hr />
+
+    <form action="/capturador" method="post">
+      <label for="nombre">Nombre:</label>
+      <input name="name" type="text" value="Yusef" /> <br />
+      <label for="nombre">Age:</label>
+      <input max="99" min="1" name="age" step="1" type="number" value="19" />
+      <br />
+      <select name="gender">
+        <option selected="selected" value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="otro">Other</option>
+      </select>
+      <br />
+      <input checked="checked" name="newsletter" type="radio" value="daily" />
+      Daily <input name="newsletter" type="radio" value="weekly" /> Weekly<br />
+      <textarea cols="20" name="comments" rows="5">Comment</textarea><br />
+      <label
+        ><input name="terms" type="checkbox" value="tandc" />Accept terms</label
+      >
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div class="box">
+      <h1>Yo soy una box</h1>
+    </div>
+
+    <hr />
+
+    <video width="300" height="730" controls>
+      <source src="./reveal.js-master/webflowShort.mp4" type="video/mp4" />
+      Tu navegador no soporta el elemento de video.
+    </video>
+
+    <audio controls>
+      <source src="./reveal.js-master/praudio.mp3" type="audio/mp3" />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/2hTa-y9ZXu4?si=XQb_1bWrWuwh4zAy&amp;controls=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <style>
+      body {
+        background-color: #1100ff;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+
+    <article
+      id="electric-cars"
+      data-columns="3"
+      data-index-number="12314"
+      data-parent="cars"
+      class="box"
+    >
+      <h1>Yo soy una box con Data</h1>
+    </article>
+  </body>
+</html>

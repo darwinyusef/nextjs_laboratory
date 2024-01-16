@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>reveal.js - Markdown Example</title>
+
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme" />
+
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <section
+        data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>Aprende de 0 HTML5</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            ### 1: Estructura y Doctypes
+            ```html
+            <!DOCTYPE html>
+            <html lang="es">
+              <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Mi Página Web</title>
+              </head>
+              <body>
+
+              </body>
+            </html>
+            ```
+
+            --
+
+            ### 2: Párrafos y Formato de Texto
+            ```html
+            <p>Este es un párrafo de ejemplo.</p>
+            <strong>Texto en negrita</strong>
+            <em>Texto en cursiva</em>
+            <h1>Texto en h1</h1>
+            <h2>Texto en h2</h2>
+            <h3>Texto en h3</h3>
+            <h4>Texto en h4</h4>
+            ```
+
+            --
+
+            ### 3. Enlaces
+            ```html
+            <a href="https://www.ejemplo.com">Enlace a Ejemplo.com</a>
+            ```
+
+            --
+
+            ### 4. Listas
+            ```html
+            <ul>
+              <li>Elemento de lista 1</li>
+              <li>Elemento de lista 2</li>
+            </ul>
+            
+            <ol>
+                <li>Elemento numerado 1</li>
+                <li>Elemento numerado 2</li>
+            </ol>
+            ```
+
+            --
+
+            ### 5. Imágenes
+            ```html
+            <img src="imagen.jpg" alt="Descripción de la imagen">
+            ```
+
+            --
+
+            ### 6. Tablas
+            ```html
+            <table>
+              <tr>
+                  <th>Encabezado 1</th>
+                  <th>Encabezado 2</th>
+              </tr>
+              <tr>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
+              </tr>
+            </table>
+            ```
+
+            --
+
+            ### 7. Formularios
+            ```html
+            <form action="/procesar" method="post">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre">
+          
+              <input type="submit" value="Enviar">
+            </form>
+            ```
+
+            --
+
+            ### 8: Marcado Adicional
+            ```html
+              <!-- Comentario en HTML -->
+              <!DOCTYPE html>
+            ```
+
+            --
+
+            ### 9: Formato Data
+            ```html
+            <article
+              id="electric-cars"
+              data-columns="3"
+              data-index-number="12314"
+              data-parent="cars">
+              …
+            </article>
+            ```
+
+            ```js
+            const article = document.querySelector("#electric-cars");
+            // The following would also work:
+            // const article = document.getElementById("electric-cars")
+
+            article.dataset.columns; // "3"
+            article.dataset.indexNumber; // "12314"
+            article.dataset.parent; // "cars"
+            ```
+
+            ```css
+            article::before {
+              content: attr(data-parent);
+            }
+            article[data-columns="3"] {
+              width: 400px;
+            }
+            article[data-columns="4"] {
+              width: 600px;
+            }
+            ```
+
+
+            --
+
+            ### 10 Introducción a CSS (Etiqueta e Internos Styles)
+            ```html
+            <style>
+              body {
+                  background-color: #f0f0f0;
+                  font-family: Arial, sans-serif;
+              }
+            </style>
+
+            <body style="width:100%"></body>
+            ```
+
+            --
+
+            ### 11. Color en CSS
+            ```html
+            <style>
+              h1 {
+                  color: #3366cc;
+              }
+            </style>
+            ```
+
+            --
+
+            ### Texto en CSS
+            ```html
+            <style>
+              p {
+                  font-size: 16px;
+                  line-height: 1.5;
+              }
+            </style>
+            ```
+
+            --
+
+            ### Cajas y Secciones en CSS
+            ```html
+            <style>
+              .box {
+                  border: 1px solid #999;
+                  padding: 10px;
+              }
+            </style>
+            ```
+
+            --
+
+            ### Introducción a Inputs
+            ```html
+            <input type="text" placeholder="Ingrese su nombre">
+            ```
+
+            --
+
+            ### Video
+            ```html
+            <video width="320" height="240" controls>
+              <source src="webflowShort.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
+            ```
+
+            --
+
+            ### Audio
+            ```html
+            <audio controls>
+                <source src="praudio.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            ```
+
+            --
+
+            ### Iframe y Objects
+            ```html
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2hTa-y9ZXu4?si=i_xpgzXOKwZGD-Nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            ```
+          </script>
+        </section>
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #36D1DC, #5B86E5)"
+        >
+          <h2>HTML No Semantico y basico</h2>
+          <a href="./index_html.html">Ir a la web</a>
+        </section>
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #FF5F6D, #FFC371)"
+        >
+          <h2>HTML5 Semantico</h2>
+          <a href="./index_semantic_html5.html">Ir a la web</a>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        // mermaid initialize config
+        mermaid: {
+          flowchart: {
+            curve: "linear",
+          },
+        },
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealMath.KaTeX,
+          RevealMermaid,
+        ],
+      });
+    </script>
+  </body>
+</html>

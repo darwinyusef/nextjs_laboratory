@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>reveal.js - Markdown Example</title>
+
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme" />
+
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h3>APRENDE DE 0 TAILWIND Y CSS3</h3>
+          <div class="mermaid">
+            <pre>
+                timeline
+                title  
+                Iniciando : Installing Tailwind : Quick Start
+                Tailwind Basics : Preflight : Prefixes : CSS Units : Pluggins - List to Pluggins
+                Typography : Color and Opacity : Alignment and Spacing : Lists : Formularios Tailwind 
+                The Box : Can You See the Box? : What’s in the Box? : Padding and Margins : Borders : Background Color : Background Images : Height and Width 
+                Page Layout: Containers : Floats and Clears : Position and Z-Index : Tables : Grids : Flexbox : Box Alignment 
+                Responsive Design: Screen Widths and Breakpoints : Hide Based on Size : Fewer Grid Columns on Small Devices : Flex on Larger Devices 
+                Customizing Tailwind: Configuration File Basics : Change Default Values : Change Generated Classes : Configure Variant Prefixes : Integrate with Existing CSS : Access Tailwind from JavaScript : Purge CSS
+            </pre>
+          </div>
+        </section>
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>1. Instalación y Configuración (Installing Tailwind)</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            <!-- .slide: data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)" -->
+            ### Instalar Tailwind CSS y sus dependencias
+            ```bash
+                npm install -D tailwindcss
+                npx tailwindcss init
+            ```
+            ```javascript
+            /** @type {import('tailwindcss').Config} */
+                module.exports = {
+                content: ["./src/**/*.{html,js}"],
+                theme: {
+                    extend: {},
+                },
+                plugins: [],
+                }
+            ```
+
+            ```css
+                @tailwind base;
+                @tailwind components;
+                @tailwind utilities;
+            ```
+          </script>
+        </section>
+
+        <!--Fundamentos-->
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>2. Fundamentos de Tailwind (Tailwind Basics)</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            ### Utilidades de Tailwind
+            ```html
+            <div class="bg-blue-500 text-white p-4">Hola, mundo!</div>
+            ```
+
+            --
+
+            ### Preflight en el archivo CSS
+            ```console
+            @import 'tailwindcss/preflight';
+            ```
+
+            --
+
+            ### Duplicación en HTML
+            ```html[1|2]
+            <div class="mb-4">Contenido</div>
+            <div class="mb-4">Contenido</div>
+            ```
+
+            --
+
+            ###  Prefijos en clases de Tailwind
+            ```html
+            <div class="lg:text-2xl md:text-xl sm:text-lg text-base">
+                Responsive Text
+            </div>
+            ```
+
+            --
+
+            ### Unidades CSS en Tailwind
+            ```html
+            <div class="w-1/2">Ancho del 50%</div>
+            ```
+          </script>
+        </section>
+
+        <!--Tipography-->
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>3. Tipografía (Typography)</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            ### Tamaño y Forma (Size and Shape)
+            ```html
+            <h1 class="text-4xl font-bold">Título Grande</h1>
+            ```
+
+            --
+
+            ### Color y Opacidad
+            ```html
+            <p class="text-gray-700">Texto gris oscuro</p>
+            ```
+
+            --
+
+            ### Alineación y Espaciado (Alignment and Spacing)
+            ```html
+            <div class="text-center mt-4">Centrado y con margen superior</div>
+            ```
+
+            --
+
+            ### Listas
+            ```html
+            <ul class="list-disc">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+              </ul>
+            ```
+
+            --
+
+            ### Formularios Tailwind 1
+            ```html
+             <label for="username" class="block text-gray-700 font-semibold">
+                Nombre de Usuario:
+             </label>
+             <input type="text" id="username" name="username" class="border p-2 mb-4 w-full" placeholder="Ingrese su nombre de usuario">
+
+             <label for="password" class="block text-gray-700 font-semibold">
+                Contraseña:
+             </label>
+             <input type="password" id="password" name="password" class="border p-2 mb-4 w-full" placeholder="Ingrese su contraseña">
+            ```
+
+            --
+
+
+            ### Formularios Tailwind 2
+            ```html
+             <label for="email" class="block text-gray-700 font-semibold">
+                Correo Electrónico:
+            </label>
+             <input type="email" id="email" name="email" class="border p-2 mb-4 w-full" placeholder="Ingrese su correo electrónico">
+
+             <label for="checkbox" class="flex items-center">
+              <input type="checkbox" id="checkbox" name="checkbox" class="mr-2">
+              <span class="text-gray-700">Acepto los términos y condiciones</span>
+             </label>
+            ```
+          </script>
+        </section>
+
+        <!--The box-->
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>4. La Caja (The Box)</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            ### ¿Puedes ver la caja? <br> (Can You See the Box?)
+            ```html
+            <div class="invisible">Invisible</div>
+            ```
+
+            --
+
+            ### ¿Qué hay en la caja? <br>  (What’s in the Box?)
+            ```html
+            <div class="border p-4">Contenido de la caja</div>
+            ```
+
+            --
+
+            ### Relleno y Márgenes <br>  (Padding and Margins)
+            ```html
+            <div class="p-4 m-2">Con relleno y márgenes</div>
+            ```
+
+            --
+
+            ### Bordes (Borders)
+            ```html
+            <div class="border border-gray-400">Con borde gris</div>
+            ```
+
+            --
+
+            ### Color de Fondo <br>  (Background Color)
+            ```html
+            <div class="bg-blue-200">Fondo azul claro</div>
+            ```
+            ```
+
+            --
+
+            ### Imágenes de Fondo <br>  (Background Images)
+            ```html
+            <div class="bg-cover bg-center" style="background-image: url('imagen.jpg');">Imagen de fondo</div>
+            ```
+
+            --
+
+            ### Altura y Ancho <br>  (Height and Width)
+            ```html
+            <div class="h-24 w-48">Altura 24 y Ancho 48</div>
+            ```
+          </script>
+        </section>
+
+        <!--Page Layout-->
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>Diseño de Página (Page Layout)</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            ### Contenedores (Containers)
+            ```html
+            <div class="container mx-auto">Contenido centrado</div>
+            ```
+
+            --
+
+            ### Floats y Clears
+            ```html
+            <div class="float-left">Alineado a la izquierda</div>
+            ```
+
+            --
+
+            ### Posición y Z-Index
+            ```html
+            <div class="absolute z-10">Posicionado y con Z-Index 10</div>
+            ```
+
+            --
+
+            ### Tablas
+            ```html
+            <table class="w-full mb-4">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 border-b border-gray-300">Nombre</th>
+                        <th class="py-2 px-4 border-b border-gray-300">Edad</th>
+                        <th class="py-2 px-4 border-b border-gray-300">Ciudad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b border-gray-300">Juan Pérez</td>
+                        <td class="py-2 px-4 border-b border-gray-300">25</td>
+                        <td class="py-2 px-4 border-b border-gray-300">Ciudad A</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b border-gray-300">María García</td>
+                        <td class="py-2 px-4 border-b border-gray-300">30</td>
+                        <td class="py-2 px-4 border-b border-gray-300">Ciudad B</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b border-gray-300">Carlos Rodríguez</td>
+                        <td class="py-2 px-4 border-b border-gray-300">22</td>
+                        <td class="py-2 px-4 border-b border-gray-300">Ciudad C</td>
+                    </tr>
+                </tbody>
+            </table>
+            ```
+
+            --
+
+            ### Grids
+            ```html
+            <h1 class="text-2xl font-bold mb-4">Ejemplo de Grid System</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-md shadow-md mb-4">Item 1</div>
+                <div class="bg-white p-4 rounded-md shadow-md mb-4">Item 2</div>
+                <div class="bg-white p-4 rounded-md shadow-md mb-4">Item 3</div>
+                <div class="bg-white p-4 rounded-md shadow-md mb-4">Item 4</div>
+                <div class="bg-white p-4 rounded-md shadow-md mb-4">Item 5</div>
+                <div class="bg-white p-4 rounded-md shadow-md mb-4">Item 6</div>
+            </div>
+            ```
+
+            --
+
+            ### Flexbox
+            ```html
+            <div class="bg-gray-100 flex items-center justify-center h-screen">
+
+                <div class="bg-white p-8 rounded-md shadow-md">
+                    <h1 class="text-2xl font-bold mb-4">Ejemplo de Flexbox</h1>
+                    <p>Contenido del contenedor flexbox alineado al centro.</p>
+                </div>
+
+            </div>
+            ```
+
+            --
+
+            ### Alineación de Cajas (Box Alignment)
+            ```html
+            <div class="flex items-center">Contenido centrado verticalmente</div>
+            ```
+          </script>
+        </section>
+
+        <!--Animaciones-->
+        <section
+          data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>6. Animaciones (Animation)</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            ###  Pequeñas Animaciones Útiles (Helpful Small Animations)
+            ```html
+            <div class="animate-pulse">Pulso de animación</div>
+            ```
+
+            --
+
+            ### Transiciones
+            ```html
+            <div class="transition-transform hover:scale-110">Escalado al hacer hover</div>
+            ```
+
+            --
+
+            ### Transformaciones
+            ```html
+            <div class="transform rotate-45">Rotación de 45 grados</div>
+            ```
+
+            --
+
+            ### Otros Aspectos de Apariencia
+            ```html
+            <div class="shadow-lg">Sombra grande</div>
+            ```
+          </script>
+        </section>
+
+        <!--Responsive Design-->
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>Diseño Responsivo (Responsive Design)</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            ### Anchuras de Pantalla y Puntos de Quiebre <br>
+            (Tailwind Screen Widths and Breakpoints)
+            ```html
+            <div class="lg:w-1/2 md:w-2/3 sm:w-full">Ancho variable según tamaño de pantalla</div>
+            ```
+
+            --
+
+            ### Ocultar según Tamaño <br> (Hide Based on Size)
+            ```html
+            <div class="hidden lg:block">Visible solo en pantallas grandes</div>
+            ```
+
+            --
+
+            ### Menos Columnas en Dispositivos Pequeños
+            ```html
+            <div class="lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">Diferente cantidad de columnas</div>
+            ```
+
+            --
+
+            ### Flexbox en Dispositivos más Grandes
+            ```html
+            <div class="lg:flex md:block">Flexible en pantallas grandes, bloque en pantallas medianas</div>
+            ```
+          </script>
+        </section>
+
+        <!--Customizing Tailwind-->
+
+        <section
+          data-background-gradient="linear-gradient(to bottom, #B24592, #F15F79)"
+        >
+          <h2>8. Personalización de Tailwind (Customizing Tailwind)</h2>
+        </section>
+
+        <section
+          data-markdown
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+        >
+          <script type="text/template">
+            ###  Archivo de Configuración Básico
+            ```js
+            module.exports = {
+            theme: {
+                extend: {
+                    colors: {
+                    primary: '#3490dc',
+                    secondary: '#ffed4a',
+                    },
+                },
+            },
+            // ...
+            };
+            ```
+
+            --
+
+            ### Cambiar Clases Generadas
+            ```js
+            module.exports = {
+            theme: {
+                extend: {
+                fontSize: {
+                    '2xs': '0.625rem', // 10px
+                },
+                },
+            },
+            // ...
+            };
+            ```
+
+            --
+
+            ### Configurar Prefijos de Variantes
+            ```js
+            module.exports = {
+            // ...
+            variants: {
+                backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+            },
+            };
+            ```
+
+            --
+
+            ### Acceder a Tailwind desde JavaScript
+            ```js
+            const colors = require('tailwindcss/colors');
+            console.log(colors.blue[500]);
+            ```
+
+            --
+
+            ### Limpiar CSS no Utilizado
+            ```console
+            NODE_ENV=production npx tailwindcss build -o output.css
+            ```
+          </script>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        // mermaid initialize config
+        mermaid: {
+          flowchart: {
+            curve: "linear",
+          },
+        },
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealNotes,
+          RevealMath.KaTeX,
+          RevealMermaid,
+        ],
+      });
+    </script>
+  </body>
+</html>

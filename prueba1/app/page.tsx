@@ -6,7 +6,7 @@ export default function Home() {
     //   <div className="lg:w-2/5 md:w-full placeholder:shadow-md h-64 bg-zinc-300"></div>
     // </div>
 
-    <div className="mx-auto p-4">
+    <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Grid Example</h1>
       <div className="sm:bg-red md:bg-orange lg:bg-orange  text-white rounded-sm p-4">
         <div className="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
