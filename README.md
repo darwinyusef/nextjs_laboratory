@@ -13,6 +13,7 @@ pie title AQUICREAMOS BOOTCAMP
         "FRONTEND" : 35
         "ANIMACIONES" : 5
         "BACKEND" : 15
+        "API AI (GEMINI-ELEVENLABS-CHATGPT4)" : 5
         "DOCUMENTACION" : 5
         "DESPLIEGUE" : 10
 ```
@@ -66,7 +67,7 @@ Aprende de 0 Tailwind y CSS3
 timeline
     title TAILWIND Y CSS3 de 0
     Iniciando : Installing Tailwind : Quick Start
-    Tailwind Basics : Preflight : Prefixes : CSS Units : Pluggins - List to Pluggins
+    Tailwind Basics : Preflight : Prefixes y pseudo-classes : CSS Units : Pluggins - List to Pluggins
     Typography : Color and Opacity : Alignment and Spacing : Lists : Formularios Tailwind 
     The Box : Can You See the Box? : What’s in the Box? : Padding and Margins : Borders : Background Color : Background Images : Height and Width 
     Page Layout: Containers : Floats and Clears : Position and Z-Index : Tables : Grids : Flexbox : Box Alignment 
