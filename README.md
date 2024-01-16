@@ -76,7 +76,15 @@ timeline
 
 ---
 
-Next js -> React ->  CSS3 -> TypeScript -> Zustand js -> React Query -> Framer motion -> Next UI -> Scroll Animations -> Animations -> Formik
+Introduccion a las maquetaciones con React y Next js
+
+---
+
+Proximamente Maquetaciones con -> Next UI 
+
+---
+
+Javascript -> TypeScript -> Next js -> React - Zustand js -> React Query -> Framer motion ->  Scroll Animations -> Animations -> Formik
 
 ### Backend ( Tiempo: 4h + 4h + 3h + 1h - Teórica: 5h )
 Pendientes:  Patrones de Diseño -> Diseño del backend -> Python FastAPI -> Autenticación JWT AUTH  -> SQL - MYSQL -> json Mocks
