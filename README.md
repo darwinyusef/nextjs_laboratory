@@ -30,6 +30,7 @@ Herramienta vectoriales -> Taller de Figma uso completo de la herramienta -> int
 
 ---
 ### Introducción a Javascript desde el Backend / Frontend ( Tiempo: 4h + 4h + 3h + 1h - Teórica: 5h )
+
 Javascript y Nodejs, Introducción a las instalaciones / configuraciones con packagejson y NPM, Status, Routers Node, JS: For - While - IF - Map - Middlewares, Openai Introducción, Fetch front y back (GET, POST, PUT, DELETE), Taller de Entrenamiento de IA con chatgpt API, Input fetch preload, Input get Audio convert searchH CHATGPT API (3), Uso de ElevenLabs, POSTGRESQL NODE JS
 ---
 
